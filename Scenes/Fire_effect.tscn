@@ -1,0 +1,50 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_01.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_02.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_03.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_04.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_05.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_06.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_07.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_08.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_09.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_10.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_11.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_12.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_13.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_14.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_15.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_16.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_17.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_18.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_19.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_20.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_21.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_22.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_23.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_24.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_25.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_26.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_27.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Fire_effects/Effects_Fire_0_28.png" type="Texture" id=28]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Fire_effect" type="AnimatedSprite"]
+
+position = Vector2( -233.024, -4.41055 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 4
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+

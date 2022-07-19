@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/spaceship.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Fire_effect.tscn" type="PackedScene" id=3]
+
+[node name="Player" type="Area2D" groups=[
+"player",
+]]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+speed = 350
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+rotation = 1.5708
+z_index = 10
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -184.578, -118.63, -29.9034, -167.538, 19.0701, -125.367, 21.7908, -99.5196, -16.2997, -55.9876, 154.299, -24.5378, 157.975, 38.6801, -13.3583, 68.3731, 26.7571, 108.488, 24.9609, 135.432, -34.9128, 176.146, -183.843, 133.507 )
+
+[node name="Fire_effect" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -224.366, -113.105 )
+scale = Vector2( 0.801043, 0.843958 )
+frame = 26
+
+[node name="Fire_effect2" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -217.75, 123.595 )
+scale = Vector2( 0.801043, 0.843958 )
+frame = 25
+
+[node name="Fire_effect3" parent="." index="4" instance=ExtResource( 3 )]
+
+position = Vector2( -206.591, -25.4849 )
+scale = Vector2( 0.51811, 0.664321 )
+frame = 24
+
+[node name="Fire_effect4" parent="." index="5" instance=ExtResource( 3 )]
+
+position = Vector2( -205.856, 39.2032 )
+scale = Vector2( 0.51811, 0.664321 )
+frame = 24
+
+[node name="Bullet_position" type="Position2D" parent="." index="6"]
+
+position = Vector2( 140, 0 )
+_sections_unfolded = [ "Transform" ]
+
+

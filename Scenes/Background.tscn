@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Background.gd" type="Script" id=1]
+[ext_resource path="res://Assets/back.png" type="Texture" id=2]
+
+[node name="Background" type="Node2D"]
+
+z_index = -1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
+speed = 100
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset" ]
+
+[node name="Sprite2" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( 640, 0 )
+_sections_unfolded = [ "Offset" ]
+
+
